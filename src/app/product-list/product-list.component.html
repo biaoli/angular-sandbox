@@ -1,0 +1,9 @@
+<h2>Products</h2>
+<ul *ngFor="let p of products">
+  <li>
+    <a href="#">{{ p.name }}</a>
+    <p>{{ p.price }}</p>
+    <h4 *ngIf="p.price > 200">Notify me</h4>
+    <button>Product Detail</button>
+  </li>
+</ul>
